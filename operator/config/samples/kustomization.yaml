@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- myriad-search.io_v1alpha1_galaxy.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

@@ -1,0 +1,28 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+
+env:
+  WORKDIR: ./operator
+
+jobs:
+  lint:
+    name: Run on Ubuntu
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Clone the code
+      uses: actions/checkout@v4
+
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version-file: ${{ env.WORKDIR }}/go.mod
+
+    - name: Run linter
+      uses: golangci/golangci-lint-action@v6
+      with:
+        version: v1.63.4
+        working-directory: ${{ env.WORKDIR }}

@@ -1,0 +1,7 @@
+# mdBook files
+./docs/book
+./docs/*.js
+./docs/*.css
+
+# Binaries
+operator/bin

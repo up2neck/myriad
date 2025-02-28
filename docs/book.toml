@@ -1,0 +1,10 @@
+[book]
+title = "Myriad Search Operator"
+authors = ["163534172+up2neck@users.noreply.github.com"]
+description = "There will be something special..."
+
+[output.html]
+default-theme = "light"
+git-repository-icon = "fa-github"
+git-repository-url = "https://github.com/up2neck/myriad"
+edit-url-template = "https://github.com/up2neck/myriad/edit/master/{path}"
